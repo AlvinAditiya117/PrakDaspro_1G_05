@@ -1,6 +1,6 @@
 package P3;
 
-public class ContohTipeData {
+public class ContohTipeData05 {
     public static void main(String [] args) {
 char golonganDarah = 'A';
 byte jarak = (byte) 130;
