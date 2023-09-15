@@ -2,15 +2,15 @@ package P3;
 
 public class ContohVariable05 {
     public static void main(String[] args) {
-    String salahsatuhobysayaadalah = "Bermain petak umpet";
-    boolean ispandai =  true;
-    char jeniskelamin = 'L';
-    byte _umursayasekarang = 20;
+    String hobi = "Bermain petak umpet";
+    boolean isPandai =  true;
+    char gender = 'L';
+    byte _umurSayaSekarang = 20;
     double $ipk = 3.42, tinggi = 1.87;
-    System.out.println(salahsatuhobysayaadalah);
-    System.out.println("apakah pandai? " + ispandai);
-    System.out.println("jenis kelamin: " + jeniskelamin);
-    System.out.println("umurku saat ini: " + _umursayasekarang);
+    System.out.println(hobi);
+    System.out.println("apakah pandai? " + isPandai);
+    System.out.println("jenis kelamin: " + gender);
+    System.out.println("umurku saat ini: " + _umurSayaSekarang);
     System.out.println(String.format("saya beripk %s dengan tinggi badan %s", $ipk,tinggi));
     
 }
