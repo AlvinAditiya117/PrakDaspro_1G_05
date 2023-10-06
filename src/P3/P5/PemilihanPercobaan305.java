@@ -14,7 +14,7 @@ public static void main(String[]args){
     
 switch (operator) {
     case '+':
-        hasil = Angka1 + Angka2;
+        hasil=Angka1 + Angka2;
         System.out.println(Angka1 + "+" + Angka2 + "=" + hasil);
         break;
     case '-':
