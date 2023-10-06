@@ -8,10 +8,8 @@ public static void main(String[]args){
     System.out.print("masukan angka: ");
     int angka=input05.nextInt();
 
-    if (angka % 2 == 0)
-    System.out.print("angka "+angka+" bilangan genap");
-    else
-    System.out.println("angka "+angka+"bilangan ganjil");
+   String hasil = (angka % 2 == 0) ? "Genap" : "Ganjil";
+   System.out.println("angka " + angka + "adalah" + hasil);
 
 }
     
