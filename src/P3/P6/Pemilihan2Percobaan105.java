@@ -5,9 +5,9 @@ import java.util.Scanner;
 public class Pemilihan2Percobaan105 {
     public static void main(String[] args) {
         int tahun;
-        Scanner input06 = new Scanner(System.in);
+        Scanner sc05 = new Scanner(System.in);
         System.out.print("Masukkan Tahun : ");
-        tahun = input06.nextInt();
+        tahun = sc05.nextInt();
     if ((tahun % 4) == 0 ) {
     if ((tahun % 100) != 0)
                 System.out.println("Tahun Kabisat");
