@@ -8,7 +8,9 @@ public class Pemilihan2Percobaan105 {
         Scanner sc05 = new Scanner(System.in);
         System.out.print("Masukkan Tahun : ");
         tahun = sc05.nextInt();
-    if ((tahun % 4) == 0 ) {
+    if ((tahun % 400) == 0) 
+        System.out.println("Tahun Kabisat");
+    else if ((tahun % 4) == 0 ) {
     if ((tahun % 100) != 0)
         System.out.println("Tahun Kabisat");
     else 
