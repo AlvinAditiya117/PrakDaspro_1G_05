@@ -1,7 +1,5 @@
 package P7;
-
 import java.util.Scanner;
-
 public class ForKelipatan05 {
     public static void main(String[] args) {
         Scanner sc05 = new Scanner(System.in); 
@@ -9,13 +7,13 @@ public class ForKelipatan05 {
         double rata2=0;
         System.out.print("Masukkan bilangan kelipatan (1-9): ");
         kelipatan = sc05.nextInt();
-        for (int i = 1; i <= 50; i++) {
-            if (i % kelipatan == 0) {
+    for (int i = 1; i <= 50; i++) {
+        if (i % kelipatan == 0) {
                 jumlah += i;
                 counter++;
     }
 }
-        if (counter != 0) {
+    if (counter != 0) {
             rata2 = (double) jumlah / counter;
 }
 
