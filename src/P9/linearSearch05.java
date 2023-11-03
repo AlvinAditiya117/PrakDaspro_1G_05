@@ -8,6 +8,7 @@ public class linearSearch05 {
     int n = 0;
     int key ;
     int hasil = 0 ;
+    String a = null ;
     System.out.println("masukkan jumlah element array : ");
     n = sc05.nextInt();
     int[] arrayInt = new int[n];
@@ -19,12 +20,15 @@ public class linearSearch05 {
     System.out.println("masukkan key yang ingin dicari : ");
     key = sc05.nextInt();
     
-        for (int i = 0; i < arrayInt.length; i++) {
+    for (int i = 0; i < arrayInt.length; i++) {
         if (arrayInt[i] == key) {
             hasil = i ;
-            break ;
+            System.out.println("key ada dalam array pada posisi indek ke- "+hasil);
+        continue;
+        }else
+        a = "data tidak ditemukan";
         }
+    if (hasil == 0)
+    System.out.println(a);
     }
-    System.out.println("key ada dalam array pada posisi indek ke- "+hasil);
-}
 }
