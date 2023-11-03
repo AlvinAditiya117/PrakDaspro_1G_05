@@ -7,11 +7,11 @@ public class arrayNilai05 {
     Scanner sc05 = new Scanner(System.in);
     int nilaiAkhir[] = new int [10] ;
     for (int i = 0; i < nilaiAkhir.length; i++) {
-        System.out.print("masukan nilai akhir ke-"+i+" :");
+        System.out.print("masukan nilai akhir ke- "+i+" : ");
         nilaiAkhir[i] = sc05.nextInt();
     }
     for (int i = 0; i < nilaiAkhir.length; i++) {
-        System.out.print("masukan nilai akhir ke-"+i+"adalah "+nilaiAkhir[i]);  
+        System.out.println("masukan nilai akhir ke- "+i+" adalah "+nilaiAkhir[i]);  
     }
     }
 }
