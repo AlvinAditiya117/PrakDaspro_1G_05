@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class arrayBilangan05 {
     public static void main(String[]args){
     Scanner sc05 = new Scanner(System.in);
-    int Bill[] = new int [4] ;
+    int Bill[] = {5,13,-7,17} ;
     Bill [0] = 5 ;
     Bill [1] = 13 ;
     Bill [2] = -7 ;
