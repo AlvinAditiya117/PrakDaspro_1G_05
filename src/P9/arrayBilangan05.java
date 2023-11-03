@@ -10,9 +10,9 @@ public class arrayBilangan05 {
     Bill [1] = 13 ;
     Bill [2] = -7 ;
     Bill [3] = 17 ;
-    System.out.println(Bill[0]);
-    System.out.println(Bill[1]);
-    System.out.println(Bill[2]);
-    System.out.println(Bill[3]);
+
+    for (int i = 0; i < 4; i++) {
+        System.out.println(Bill[i]);
+    }
 }
 }
