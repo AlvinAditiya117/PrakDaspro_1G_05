@@ -24,24 +24,43 @@ public class BioskopWithScanner05 {
             switch (menu) {
                 case 1:
 
-                    while (true) {
-                        System.out.print("masukan nama = ");
-                        nama = sc05.nextLine();
-                        System.out.print("masukan baris = ");
-                        baris = sc05.nextInt();
-                        System.out.print("masukan kolom = ");
-                        kolom = sc05.nextInt();
-                        sc05.nextLine();
+                int counter = 0;
 
-                        penonton[baris - 1][kolom - 1] = nama;
+                while (true && counter < penonton.length) {
+                    counter++;
+                    System.out.print("masukkan nama : ");
+                    nama = sc05.nextLine();
+                
+                do {
+                    System.out.print("masukkan baris : ");
+                    baris = sc05.nextInt();
+                    if (baris > penonton.length)
+                    System.out.print("inputan melebihi jumlah baris");
+                }
+            
+            
+            while (baris > penonton.length);
 
-                        System.out.print("input penonyon lainnya? (y/n) : ");
-                        next = sc05.nextLine();
+            do {
+                System.out.print("masukkan kolom : ");
+                kolom = sc05.nextInt();
+                sc05.nextLine();
+                if (kolom > penonton[0].length) {
+                    System.out.print("input melebihi jumlah kolom");
+                }
+            }
+            
+            while (kolom > penonton[0].length); 
+            
+                penonton[baris - 1][kolom - 1] = nama ;
+                    System.out.print("input penonyon lainnya? (y/n) : ");
+                    next = sc05.nextLine();
 
-                        if (next.equalsIgnoreCase("n")) {
-                            break;
-                        }
-                    }
+                    if (next.equalsIgnoreCase("n")) {
+                    break;
+                }
+            }
+            break;
                 case 2:
 
                     System.out.println();
@@ -60,6 +79,6 @@ public class BioskopWithScanner05 {
                     lanjut = false;
                     break;
             }
-        }
-    }
+}
+}
 }
