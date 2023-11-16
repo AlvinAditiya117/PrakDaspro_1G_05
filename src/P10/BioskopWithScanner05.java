@@ -11,7 +11,7 @@ public class BioskopWithScanner05 {
 
         String[][] penonton = new String[][] {{"***","***"},{"***","***"},{"***","***"},{"***","***"},};
 
-        while (lanjut) {
+        while (lanjut) {      
             System.out.println("==========[ MENU BIOSKOP ]==========");
             System.out.println("|| 1. input data penonton         ||");
             System.out.println("|| 2. tampilan data penonton      ||");
