@@ -19,8 +19,20 @@ public class Bioskop05 {
 
         System.out.println(penonton.length);
 
-        for (int i = 0; i < penonton.length; i++) {
-            System.out.println("panjang baris ke-" +(i+1)+" : "+penonton[i].length);
+        for (String []barispenonton : penonton) {
+            System.out.println("panjang baris " +barispenonton.length);
+        }
+
+        //System.out.println("penonton baris ke3 = ");
+
+        //for (String i : penonton[2]) {
+            //System.out.println(i);
+        //}
+
+        System.out.println("penonton baris ke3 = ");
+
+        for (int i = 0; i < penonton[2].length; i++) {
+            System.out.println(penonton[2][i]);
         }
     }
 
