@@ -1,4 +1,4 @@
-package P3.P6;
+package P6;
 
 import java.util.Scanner;
 

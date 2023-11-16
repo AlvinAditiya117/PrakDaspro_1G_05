@@ -1,8 +1,8 @@
-package P3.P6;
+package P6;
 
 import java.util.Scanner;
 
-public class Pemilihan2Percobaan205 {
+public class Pemilihan2Perrcobaan205 {
      public static void main(String[] args) {
         int sudut1, sudut2, sudut3, totalSudut;
         Scanner sc05 = new Scanner(System.in);
@@ -16,13 +16,12 @@ public class Pemilihan2Percobaan205 {
     if (totalSudut == 180) {
     if ((sudut1 == 90) || (sudut2 == 90) || (sudut3 == 90)) {
         System.out.println("segitiga siku-siku");
-    }else if ((sudut1 == 60 && sudut2 == 60 && sudut3 == 60)) {
+    }else if ((sudut1 == sudut2 && sudut2 == sudut3)) {
         System.out.println("segitiga sama sisi");
-    }else if ((sudut1 == 70 && sudut2 == 70 && sudut1 == 40)) {
-        System.out.println("segitiga sama kaki");
-    }else {
+    }else if ((sudut1 == sudut2 || sudut2 == sudut3 || sudut1 == sudut3)) {
+        System.out.println("segitiga sama sisi");
+    }else
         System.out.println("segitiga sembarang");
-    }
     }else
         System.out.println("Bukan Segitiga");
     }

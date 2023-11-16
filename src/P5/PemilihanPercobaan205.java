@@ -1,4 +1,4 @@
-package P3.P5;
+package P5;
 import java.util.Scanner;
 public class PemilihanPercobaan205 {
     public static void main(String[]args){
