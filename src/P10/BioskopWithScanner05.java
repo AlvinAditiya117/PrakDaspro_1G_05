@@ -24,43 +24,47 @@ public class BioskopWithScanner05 {
             switch (menu) {
                 case 1:
 
-                int counter = 0;
+                    int counter = 0;
 
-                while (true && counter < penonton.length) {
-                    counter++;
-                    System.out.print("masukkan nama : ");
-                    nama = sc05.nextLine();
-                
-                do {
-                    System.out.print("masukkan baris : ");
-                    baris = sc05.nextInt();
-                    if (baris > penonton.length)
-                    System.out.print("inputan melebihi jumlah baris");
-                }
-            
-            
-            while (baris > penonton.length);
+                    while (true && counter < penonton.length) {
+                        counter++;
+                        System.out.print("masukkan nama : ");
+                        nama = sc05.nextLine();
+                        boolean case1 = false ;
 
-            do {
-                System.out.print("masukkan kolom : ");
-                kolom = sc05.nextInt();
-                sc05.nextLine();
-                if (kolom > penonton[0].length) {
-                    System.out.print("input melebihi jumlah kolom");
-                }
-            }
-            
-            while (kolom > penonton[0].length); 
-            
-                penonton[baris - 1][kolom - 1] = nama ;
-                    System.out.print("input penonyon lainnya? (y/n) : ");
-                    next = sc05.nextLine();
+                        do {
+                        do {
+                            System.out.print("masukkan baris : ");
+                            baris = sc05.nextInt();
+                            if (baris > penonton.length)
+                                System.out.print("inputan melebihi jumlah baris");
+                        }
 
-                    if (next.equalsIgnoreCase("n")) {
+                        while (baris > penonton.length);
+
+                        do {
+                            System.out.print("masukkan kolom : ");
+                            kolom = sc05.nextInt();
+                            sc05.nextLine();
+                            if (kolom > penonton[0].length) {
+                                System.out.print("input melebihi jumlah kolom");
+                            }
+                        } while (kolom > penonton[0].length);
+                        if (penonton[baris - 1][kolom - 1] != null) {
+                            System.out.println("warning!!! kursi sudah ditempati, pilih kursi lain ;) ");
+                            }
+                        }while (penonton[baris - 1][kolom - 1] != null);
+
+                        penonton[baris - 1][kolom - 1] = nama;
+
+                        System.out.print("input penonyon lainnya? (y/n) : ");
+                        next = sc05.nextLine();
+
+                        if (next.equalsIgnoreCase("n")) {
+                            break;
+                        }
+                    }
                     break;
-                }
-            }
-            break;
                 case 2:
 
                     System.out.println();
@@ -79,6 +83,6 @@ public class BioskopWithScanner05 {
                     lanjut = false;
                     break;
             }
-}
-}
+        }
+    }
 }
