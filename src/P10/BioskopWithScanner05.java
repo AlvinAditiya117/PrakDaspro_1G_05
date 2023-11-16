@@ -9,7 +9,7 @@ public class BioskopWithScanner05 {
         String nama, next;
         boolean lanjut = true;
 
-        String[][] penonton = new String[4][2];
+        String[][] penonton = new String[][] {{"***","***"},{"***","***"},{"***","***"},{"***","***"},};
 
         while (lanjut) {
             System.out.println("==========[ MENU BIOSKOP ]==========");
@@ -47,13 +47,14 @@ public class BioskopWithScanner05 {
                             kolom = sc05.nextInt();
                             sc05.nextLine();
                             if (kolom > penonton[0].length) {
-                                System.out.print("input melebihi jumlah kolom");
+                                System.out.println("input melebihi jumlah kolom");
+                                
                             }
                         } while (kolom > penonton[0].length);
-                        if (penonton[baris - 1][kolom - 1] != null) {
+                        if (penonton[baris - 1][kolom - 1] != "***") {
                             System.out.println("warning!!! kursi sudah ditempati, pilih kursi lain ;) ");
                             }
-                        }while (penonton[baris - 1][kolom - 1] != null);
+                        }while (penonton[baris - 1][kolom - 1] != "***");
 
                         penonton[baris - 1][kolom - 1] = nama;
 
