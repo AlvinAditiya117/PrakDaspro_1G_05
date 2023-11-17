@@ -9,7 +9,7 @@ public class Array2_05 {
         int data[][] = new int[4][4];
         int jam[] = { 3, 6, 9, 12 };
 
-        int min[] = { 100, 100, 100, 100 };
+        int min[] = {100,100,100,100};
         double total[] = { 0, 0, 0, 0 };
         double rata2[] = { 0, 0, 0, 0 };
 
@@ -58,6 +58,11 @@ public class Array2_05 {
             for (int j = 0; j < rata2.length; j++) {
                 System.out.print(data[i][j] + "");
             }
+            System.out.println("");
+        }
+        System.out.println("==============");
+        for (int i = 0, j = 0; i < data.length; i++,j++) {
+            System.out.print("kecepatan angin jam-"+jam[i]+" : "+data[2][j]);
             System.out.println("");
         }
         System.out.println("==============");
