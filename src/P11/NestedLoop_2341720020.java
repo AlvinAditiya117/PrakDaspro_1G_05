@@ -16,10 +16,9 @@ public class NestedLoop_2341720020 {
             }
         }
 
-        for (int i = 0; i < temps.length; i++) {
-            System.out.print("kota ke-" + (i + 1) + " :");
-            for (int j = 0; j < temps[0].length; j++) {
-                System.out.print(temps[i][j] + "");
+        for (double[] tempsVar : temps) {
+            for (double variable : tempsVar) {
+                System.out.print(variable+"");
             }
             System.out.println();
         }
