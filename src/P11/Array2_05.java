@@ -9,9 +9,31 @@ public class Array2_05 {
         int data[][] = new int[4][4];
         int jam[] = { 3, 6, 9, 12 };
 
-        int min[] = {100,100,100,100};
+        int max[] = new int[4];
+        int min[] = new int[4];
         double total[] = { 0, 0, 0, 0 };
         double rata2[] = { 0, 0, 0, 0 };
+
+        for (int i = 0; i < rata2.length; i++) {
+            switch (i) {
+                case 0:
+                    System.out.print("masukan nilai maksimum suhu : ");
+                    max[i] = sc05.nextInt();
+                    break;
+                case 1:
+                    System.out.print("masukan nilai maksimum presentase kelembaban : ");
+                    max[i] = sc05.nextInt();
+                    break;
+                case 2:
+                    System.out.print("masukan nilai maksimum kecepatan angin : ");
+                    max[i] = sc05.nextInt();
+                    break;
+                case 3:
+                    System.out.print("masukan nilai maksimum index UV : ");
+                    max[i] = sc05.nextInt();
+                    break;
+            }
+        }
 
         for (int i = 0; i < data.length; i++) {
             System.out.printf("jam%s\n", jam[i]);
