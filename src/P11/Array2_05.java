@@ -88,8 +88,9 @@ public class Array2_05 {
             System.out.println("");
         }
         System.out.println("==============");
-        System.out.printf("rata rata suhu %.2f\n", rata2[0]);
-        System.out.printf("presentase kelembaban terendah : %s\n", min[1]);
+        System.out.printf("nilai maksimum index UV : %s\n",max[3]);
+        System.out.printf("rata rata kecepatan angin %.2f\n", rata2[2]);
+        System.out.printf("presentase kecepatan angin terendah : %s\n", min[2]);
     }
 
 }
