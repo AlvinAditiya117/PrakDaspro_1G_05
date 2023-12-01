@@ -7,6 +7,5 @@ public static void UcapanTerimaKasih(){
 }
 public static void main(String[]args){
     UcapanTerimaKasih();
-
 }
 }
