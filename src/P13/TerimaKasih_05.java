@@ -1,4 +1,4 @@
-package P12;
+package P13;
 
 public class TerimaKasih_05 {
 public static void UcapanTerimaKasih(){
