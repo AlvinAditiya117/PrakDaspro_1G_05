@@ -1,3 +1,5 @@
+package P13;
+
 import java.util.Scanner;
 
 public class Ucapan_05 {
