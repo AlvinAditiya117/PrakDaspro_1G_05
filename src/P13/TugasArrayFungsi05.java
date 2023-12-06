@@ -11,6 +11,12 @@ public class TugasArrayFungsi05 {
     static void inputData() {
         Scanner input = new Scanner(System.in);
 
+        System.out.print("Masukkan jumlah mahasiswa : ");
+        JumlahMahasiswa = input.nextInt();
+
+        System.out.print("Masukkan jumlah tugas per minggu : ");
+        JumlahMinggu = input.nextInt();
+
         for (int i = 0; i < JumlahMahasiswa; i++) {
             System.out.println("Masukkan nilai tugas " + namaMahasiswa[i]);
             for (int j = 0; j < JumlahMinggu; j++) {
