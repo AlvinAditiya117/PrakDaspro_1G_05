@@ -10,7 +10,7 @@ public class fibonacci {
             int pasanganBelumProduktif = hitungFibonacci(i - 1);
             int pasanganProduktif = totalPasangan - pasanganBelumProduktif;
 
-            System.out.printf("%-10d\t| %-18d\t| %-12d\t| %-16d%n", i, pasanganProduktif, pasanganBelumProduktif, totalPasangan);
+            System.out.printf("%-12d\t| %-13d\t| %-16d\t| %-15d%n", i, pasanganProduktif, pasanganBelumProduktif, totalPasangan);
         }
     }
     public static int hitungFibonacci(int n) {
